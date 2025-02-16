@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crucigrama de Programación de Hilos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossword.js/0.3.4/crossword.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #crossword { display: inline-block; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Crucigrama: Programación de Hilos</h2>
+    <div id="crossword"></div>
+    <script>
+        const crossword = new Crossword({
+            element: document.getElementById("crossword"),
+            size: 10,
+            words: [
+                { word: "STREAM", hint: "Flujo de datos habilitados en un momento dado." },
+                { word: "CONCURRENCIA", hint: "Ejecutar múltiples hilos simultáneamente." },
+                { word: "MULTITAREA", hint: "Ejecutar varias tareas al mismo tiempo." },
+                { word: "SERVIDOR", hint: "Atiende peticiones de clientes." },
+                { word: "SOCKET", hint: "Canal de comunicación en redes." }
+            ]
+        });
+    </script>
+</body>
+</html>
